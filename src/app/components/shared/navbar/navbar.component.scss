@@ -1,0 +1,22 @@
+mat-toolbar {
+  mat-icon {
+    color: white;
+  }
+
+  background-color: transparent;
+
+  button {
+    background-color: transparent;
+
+  }
+
+  button:hover {
+    background-color: rgba(0,255,0,0.2);
+    transition: background-color 200ms;
+  }
+
+}
+
+.spacer {
+  flex: 1 1 auto;
+}

@@ -1,0 +1,40 @@
+.background {
+  opacity: 0.2;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.content {
+  width: 100vw;
+  height: 93.1vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.typedtext {
+  font-family: "Source Code Pro", monospace;
+  color: rgba(0,255,0,1);
+  border-right: 10px solid green;
+  animation: blinkTextCursor 800ms steps(44) infinite normal;
+  height: 30px;
+  //margin-bottom: 55px;
+  display: block;
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0,255,0,1);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}
