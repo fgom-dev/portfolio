@@ -8,21 +8,32 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { FramePageComponent } from './pages/master/frame-page.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SobremimPageComponent } from './pages/sobremim-page/sobremim-page.component';
+import { BackgroundComponent } from './components/shared/background/background.component';
+import { ProjetosPageComponent } from './pages/projetos-page/projetos-page.component';
+import {CardComponent} from "./components/shared/card/card.component";
+import {HttpClientModule} from "@angular/common/http";
+import { GraphQLModule } from './graphql.module';
+import {ReposService} from "./services/repos.data.service";
 
 @NgModule({
   declarations: [
     AppComponent,
     FramePageComponent,
     HomePageComponent,
-    SobremimPageComponent
+    SobremimPageComponent,
+    BackgroundComponent,
+    ProjetosPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    NavbarComponent
+    NavbarComponent,
+    CardComponent,
+    HttpClientModule,
+    GraphQLModule,
   ],
-  providers: [],
+  providers: [ReposService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

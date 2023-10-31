@@ -1,13 +1,12 @@
 mat-toolbar {
+  background-color: transparent;
+
   mat-icon {
     color: white;
   }
 
-  background-color: transparent;
-
   button {
     background-color: transparent;
-
   }
 
   button:hover {
@@ -15,8 +14,15 @@ mat-toolbar {
     transition: background-color 200ms;
   }
 
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .active {
+    background-color: rgba(0,255,0,0.5);
+  }
 }
 
-.spacer {
-  flex: 1 1 auto;
-}
+
+
+

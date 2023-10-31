@@ -1,0 +1,22 @@
+<mat-card class="card">
+  <div class="content">
+    <mat-card-header>
+        <mat-card-title>{{repo.name}}</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+      <p>
+        {{repo.description}}
+      </p>
+    </mat-card-content>
+  </div>
+
+  <div>
+    <mat-divider></mat-divider>
+    <mat-card-actions>
+      <button mat-button>DETALHE</button>
+      <button mat-button><a href="{{repo.url}}" target="_blank">GITHUB</a></button>
+    </mat-card-actions>
+  </div>
+</mat-card>
+

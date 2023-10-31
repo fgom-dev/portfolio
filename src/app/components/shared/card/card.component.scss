@@ -1,0 +1,28 @@
+.card {
+  background-color: rgba(0, 0, 0, .2);
+  border: 1px solid rgba(0,255,0,.2);
+  box-shadow: .2rem .2rem rgba(0,255,0,.2);
+  backdrop-filter: blur(2px);
+  justify-content: space-between;
+  height: 15rem;
+  width: 20rem;
+  text-align: justify;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+mat-divider {
+  border-color: rgba(0,255,0,.2);
+}
+
+button:hover {
+  background-color: rgba(0,255,0,0.2);
+  transition: background-color 200ms;
+}
+

@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-frame-page',
-  template: '<app-navbar></app-navbar> <router-outlet></router-outlet>'
+  templateUrl: 'frame-page.component.html',
+  styleUrls: ['frame-page.component.scss']
 })
 export class FramePageComponent {
 
