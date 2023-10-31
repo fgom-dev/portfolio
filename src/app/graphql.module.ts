@@ -7,7 +7,7 @@ import {HttpHeaders} from "@angular/common/http";
 const uri = 'https://api.github.com/graphql'; // <-- add the URL of the GraphQL server here
 export function createApollo(httpLink: HttpLink): ApolloClientOptions<any> {
   return {
-    link: httpLink.create({ uri, headers: new HttpHeaders().set("Authorization", `Bearer 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`) }),
+    link: httpLink.create({ uri, headers: new HttpHeaders().set("Authorization", `Bearer ${process.env.TOKEN}`) }),
     cache: new InMemoryCache(),
   };
 }
